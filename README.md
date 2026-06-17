@@ -85,7 +85,7 @@ cd OI-Agent-Teacher
 本仓库 6 个教学核心技能几乎零依赖：
 
 - **搬题助手**：g++（C++17）
-- 备课 / 命题工坊 / 积步 / 讲台 / problem-set-generator：无外部依赖
+- 备课 / 命题工坊 / 积步 / ppt-creator / problem-set-generator：无外部依赖
 
 宿主环境注入的官方技能（docx/pdf/pptx/xlsx/浏览器等）各自有依赖，见各技能说明。
 
@@ -107,14 +107,14 @@ OI-Agent-Teacher/
 │       ├── 备课/                     # 讲义材料准备
 │       ├── 命题工坊/                 # OI/CSP 题目创作
 │       ├── 积步/                     # 知识沉淀与复习调度
-│       ├── 讲台/                     # 课件生成（HTML 单文件 PPT）
+│       ├── ppt-creator/             # 课件生成（HTML 单文件 PPT）
 │       └── problem-set-generator/   # 题单与训练计划
 │
 ├── resource/                       # Skills 依赖的资源（脚本、模板、参考文档）
 │   ├── 搬题助手/                       # 参考文档 + question 模板
 │   ├── 备课/                         # references/ + assets/
 │   ├── 积步/                         # 复习调度规则 + 知识卡片模板
-│   ├── 讲台/                         # HTML 课件模板 + 版式/组件/主题/自检
+│   ├── ppt-creator/                 # HTML 课件模板 + 版式/组件/主题/自检
 │   └── problem_set_generator/       # knowledge_map + templates/
 │
 └── memory/
@@ -140,7 +140,7 @@ OI-Agent-Teacher/
 | **备课** | 信息学奥赛讲义准备，去 AI 味，叙事设计（情绪曲线/植入-揭示/赌注阶梯） |
 | **命题工坊** | OI/CSP 题目创作，注重思维深度和算法本质 |
 | **积步** | 知识沉淀（知识卡片）、间隔复习调度、学习画像诊断 |
-| **讲台** | 讲义出 HTML 单文件课件（算法讲义/题解/复习串讲/课堂教案），零依赖浏览器打开 |
+| **ppt-creator** | 讲义出 HTML 单文件课件（算法讲义/题解/复习串讲/课堂教案），零依赖浏览器打开 |
 | **problem-set-generator** | 个性化题单、训练计划、Upsolving 计划、模板训练计划 |
 
 > 文档处理（docx/pdf/pptx/xlsx）、浏览器控制、定时任务等通用能力由宿主环境（Claude Code / Cherry Studio）注入的官方技能提供，本仓库只维护上述 6 个教学核心技能。

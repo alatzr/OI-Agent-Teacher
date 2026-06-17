@@ -22,7 +22,7 @@ read_when:
 
 ### 不需要额外依赖
 
-备课、命题工坊、积步、problem-set-generator
+备课、命题工坊、积步、讲台、problem-set-generator
 
 ## 路径约定
 

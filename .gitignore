@@ -55,6 +55,10 @@ agent.json
 # 积步（知识沉淀与复习；卡片是隐私数据，不追踪）
 !resource/积步/*.md
 
+# 讲台（课件生成；HTML 模板与参考文档）
+!resource/讲台/assets/*.html
+!resource/讲台/references/*.md
+
 # 题单与训练计划生成器
 !resource/problem_set_generator/knowledge_map.md
 !resource/problem_set_generator/templates/*.md

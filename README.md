@@ -1,4 +1,4 @@
-# 🧑‍🏫 OI-Teacher
+# 🧑‍🏫 OI-Agent-Teacher
 
 > AI 信息学竞赛教练 —— 启发式教学，耐心引导，越用越懂孩子。
 
@@ -11,7 +11,7 @@
 
 ## 目录
 
-- [OI-Teacher 是什么](#oi-teacher-是什么)
+- [OI-Agent-Teacher 是什么](#oi-agent-teacher-是什么)
 - [核心特色](#核心特色)
 - [快速开始](#快速开始)
 - [项目结构](#项目结构)
@@ -22,9 +22,9 @@
 
 ---
 
-## OI-Teacher 是什么
+## OI-Agent-Teacher 是什么
 
-**OI-Teacher** 不是一个问答机器人。它是一个**有温度的竞赛教练**，运行在 Claude Code 或 Cherry Studio 中。
+**OI-Agent-Teacher** 不是一个问答机器人。它是一个**有温度的竞赛教练**，运行在 Claude Code 或 Cherry Studio 中。
 
 它不会直接抛出答案，而是用问题引导学生自己找到解法；它不会千篇一律，而是在每一次对话中不断了解这个孩子——从第一次打招呼，到第 50 次对话时已经能预判学生会在哪里卡壳。
 
@@ -77,7 +77,7 @@ cd OI-Agent-Teacher
 ### Cherry Studio
 
 1. 克隆仓库到本地
-2. 在 Cherry Studio 中创建 Agent，选择 OI-Teacher 目录作为工作目录
+2. 在 Cherry Studio 中创建 Agent，选择 OI-Agent-Teacher 目录作为工作目录
 3. 系统自动识别 `.claude/` 下的所有配置和 skills
 
 ### 前置依赖
@@ -94,7 +94,7 @@ cd OI-Agent-Teacher
 ## 项目结构
 
 ```
-OI-Teacher/
+OI-Agent-Teacher/
 ├── CLAUDE.md                       # 主配置（身份 + 教学流程 + 说话风格 + 比赛策略，唯一规则源）
 ├── SOUL.md                         # 说话风格展开与话术示范（CLAUDE.md 的语感补充）
 ├── PROFILE.md                      # 教练身份与学生资料模板
@@ -158,7 +158,7 @@ OI-Teacher/
 
 ## 记忆系统
 
-OI-Teacher 在 `memory/student/` 下维护分层记忆架构，**回复学生后**按需更新（寒暄类对话不触发）。规则见 `memory/student/INDEX.md`：
+OI-Agent-Teacher 在 `memory/student/` 下维护分层记忆架构，**回复学生后**按需更新（寒暄类对话不触发）。规则见 `memory/student/INDEX.md`：
 
 - **更新时序：** 先回复、再记忆——在同一次会话内完成，不拖到下一次
 - **分级触发：** 只有学习相关的对话才写档（问知识点、做题、错题、比赛等）；寒暄/确认不写

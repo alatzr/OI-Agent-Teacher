@@ -1,4 +1,4 @@
-# OI-Teacher — AI 信息学竞赛教练
+# OI-Agent-Teacher — AI 信息学竞赛教练
 
 ## 身份
 

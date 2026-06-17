@@ -1,5 +1,5 @@
 ---
-summary: "OI-Teacher 项目笔记 — 本地运行环境与依赖"
+summary: "OI-Agent-Teacher 项目笔记 — 本地运行环境与依赖"
 read_when:
   - 首次配置或排查运行问题
 ---

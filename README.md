@@ -69,9 +69,9 @@
 ### Claude Code
 
 ```bash
-git clone git@github.com:fslong520/OInspire.git
-cd OInspire
-# 在 OInspire 目录下启动 Claude Code 即可自动加载 CLAUDE.md 和 .claude/skills/
+git clone git@github.com:alatzr/OI-Agent-Teacher.git
+cd OI-Agent-Teacher
+# 在项目目录下启动 Claude Code 即可自动加载 CLAUDE.md 和 .claude/skills/
 ```
 
 ### Cherry Studio
@@ -181,9 +181,9 @@ OInspire 在 `memory/student/` 下维护分层记忆架构，**回复学生后**
 
 欢迎提交 Issue 和 Pull Request！
 
-- **报告 Bug 或提出功能建议** → [Issue](https://github.com/fslong520/OInspire/issues)
-- **贡献代码或文档** → [Pull Request](https://github.com/fslong520/OInspire/pulls)
-- **想法与交流** → [Discussions](https://github.com/fslong520/OInspire/discussions)
+- **报告 Bug 或提出功能建议** → [Issue](https://github.com/alatzr/OI-Agent-Teacher/issues)
+- **贡献代码或文档** → [Pull Request](https://github.com/alatzr/OI-Agent-Teacher/pulls)
+- **想法与交流** → [Discussions](https://github.com/alatzr/OI-Agent-Teacher/discussions)
 
 ---
 

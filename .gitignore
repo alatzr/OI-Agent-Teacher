@@ -1,0 +1,84 @@
+# ============================================
+# 白名单模式：忽略一切，只追踪关键文件
+# ============================================
+
+# 忽略所有文件（但 * 不影响目录遍历）
+*
+
+# 允许所有目录被遍历（关键！）
+!*/
+
+# ============================================
+# 核心配置文件
+# ============================================
+!SOUL.md
+!PROFILE.md
+!MEMORY.md
+!LICENSE
+!.gitignore
+!README.md
+!README_en.md
+!CLAUDE.md
+
+# agent.json 包含个人路径和密钥，已排除
+agent.json
+
+# ============================================
+# Claude Code / Cherry Studio 配置
+# ============================================
+!.claude/settings.json
+!.claude/skills/*/SKILL.md
+
+# ============================================
+# 记忆系统（学生数据 = 个人隐私，不追踪）
+# ============================================
+# memory/student/ 存放真实学生画像、错题、对话记录，
+# 属私密数据，绝不入 git。仓库只追踪模板目录 memory/student.example/
+!memory/student.example/
+!memory/student/INDEX.md
+
+# ============================================
+# Skills 资源文件（SKILL.md 已移至 .claude/skills/）
+# ============================================
+
+# 搬题助手
+!resource/搬题助手/*.md
+!resource/搬题助手/question/*.cpp
+!resource/搬题助手/question/*.h
+!resource/搬题助手/question/*.yaml
+!resource/搬题助手/question/testdata/*.yaml
+
+# 备课
+!resource/备课/references/*.md
+!resource/备课/assets/*.md
+
+# 积步（知识沉淀与复习；卡片是隐私数据，不追踪）
+!resource/积步/*.md
+
+# 题单与训练计划生成器
+!resource/problem_set_generator/knowledge_map.md
+!resource/problem_set_generator/templates/*.md
+
+# ============================================
+# Python 缓存忽略
+# ============================================
+**/__pycache__/
+**/*.pyc
+
+# ============================================
+# 运行数据（不追踪）
+# ============================================
+browser/
+file_store/
+tool_result/
+sessions/
+node_modules/
+.eme_store*
+.reme_store*
+.bootstrap_completed
+HEARTBEAT.md
+jobs.json
+chats.json
+memory_file_metadata.json
+skill.json
+.skill.json.lock
